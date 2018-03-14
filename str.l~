@@ -1,0 +1,13 @@
+%{
+#include<stdio.h>
+#include “y.tab.h”
+extern “C” int yylex();
+%}
+%%
+[a-zA-Z]+[a-zA-Z0-9]* {return STRING;}
+[@]+{return DIVIDER;}
+[a-z]+\.[a-z]+{return WEB;}
+[\n] {return N;}
+.;
+%%
+

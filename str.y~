@@ -1,0 +1,94 @@
+#include<stdio.h>
+%{
+extern “C” int yylex();
+extern “C” int yyparse();
+extern “C” FILE *yyin;
+void yyerror(const char *s);
+%}
+
+%token STRING DIVIDER WEB N
+%%
+stmt: STRING DIVIDER WEB N { printf(“valid username \n”);};
+%%
+main();
+printf(“enter string:”);
+yyparse();
+}
+void yyerror(const char *s)
+{printf(“invalid\n);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

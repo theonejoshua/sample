@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+int n[30],i,a;
+printf("enter the 20 digit number");
+for(i=0;i<20;i++)
+{
+scanf("%d",&n[i]);
+}
+for(i=0;i<=16;i++)
+{
+if((n[i]==0)&&(n[i+1]==0)&&(n[i+2]==0)&&(n[i+3]==0)&&(n[i+4]==0)&&(n[i+5]==0))
+a=1;
+}
+if(a==1)
+printf("error");
+else
+printf("no error");
+return 0;
+}

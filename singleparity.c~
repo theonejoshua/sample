@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main()
+{
+int i,count=0,n;
+int code[20];
+printf("Enter the no. of digits\n");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+scanf("%d",&code[i]);
+for(i=0;i<n;i++)
+if(code[i]==1)
+{
+count++;
+}
+if(count%2==0)
+printf("Parity is 0.\n");
+else
+printf("Parity is 1.\n");
+return 0;
+}
+
